@@ -1,0 +1,547 @@
+$color_1: #1eacc7;
+$color_2: #FF5656;
+  
+header
+	position: relative
+	height: 50px
+
+nav
+	position: fixed
+	width: 100%
+	height: 50px
+	background-color: #212121
+	z-index: 5
+
+.menu
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style-type: none
+	&_link
+		color: #ffffff
+		font-size: 15px
+		font-weight: 300
+		&:hover
+			text-decoration: none
+			color: $color_1
+	&_item
+		border-right: 2px dotted black
+		padding-right: 28px
+
+  &:last-child
+      border-right: none
+
+.subheader
+	position: absolute
+	top: 50px
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	&_logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+	&_official
+		margin-top: 6px
+		opacity: 0.5
+		color: #ffffff
+		font-size: 13px
+		font-weight: 400
+	&_call
+		color: #ffffff
+		font-size: 12px
+		font-weight: 300
+		margin-top: 19px
+		text-align: right
+	&_phone
+		display: block
+		margin-top: 8px
+		color: white
+		font-size: 22px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: right
+		line-height: 12px
+
+	&_btn
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		border-radius: 4px
+		background-image: linear-gradient(to top, $color_1 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #ffffff
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		+btn_hover
+
+.subheader_phone
+  text-decoration: none !important
+
+.hamburger
+  display: none
+
+.promo
+  min-height: 800px
+  background: url(../img/uber_bg.png) center (center / cover) no-repeat
+  padding: 150px 0 135px 0
+  // width: 100%
+
+.promo_header
+  font-weight: 700
+  font-size: 60px
+  line-height: 60px
+  /* display: flex;
+  align-items: center
+  text-align: center
+  text-transform: uppercase
+  color: #ffffff
+  margin-top: 60px
+
+.promo_subheader
+  font-weight: 700
+  font-size: 36px
+  line-height: 36px
+  /* display: flex;
+  align-items: center
+  text-align: center
+  text-transform: uppercase
+  margin-top: 2
+  color: #ffffff
+
+.promo_descr
+  font-weight: 400
+  font-size: 18px
+  line-height: 24px
+  align-items: center
+  text-align: center
+  margin-top: 16px
+  color: #ffffff
+
+.promo_btn
+  /* position: absolute;
+  width: 259px
+  height: 63px
+  background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
+  border-radius: 4px
+  border: none
+  font-weight: 400
+  font-size: 18px
+  line-height: 63px
+  display: block
+  margin: 0 auto
+  align-items: center
+  text-align: center
+  text-transform: uppercase
+  color: #ffffff
+  margin-top: 116px
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+  +btn_hover
+
+.reasons
+	padding: 71px 0 65px 0
+
+.label
+	position: relative
+	margin: 0 auto
+	height: 24px
+	width: 112px
+	padding: 5px 12px
+	background-color: #000000
+	color: #ffffff
+	font-size: 11px
+	font-weight: 300
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	&_white 
+		background-color: #fff
+		color: #000
+	&_min 
+		width: 76px
+
+.title
+	position: relative
+	margin-bottom: 0
+	margin-top: 38px
+	color: #222222
+	font-size: 38px
+	line-height: 38px
+	font-weight: 700
+	text-transform: uppercase
+	text-align: center
+	z-index: 2
+	&_white 
+		color: #fff
+
+.subtitle
+	position: relative
+	margin-top: 19px
+	color: #222222
+	font-size: 17px
+	font-weight: 400
+	text-align: center
+	z-index: 2
+	&_white 
+		color: #fff
+
+.reasons .reasons_block
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 35px
+	.reasons_round
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-right: 26px
+		width: 113px
+		height: 113px
+		background-color: #1eacc7
+		border-radius: 100%
+	.reasons_descr
+		width: 343px
+		.reasons_subtitle
+			line-height: 21px
+			color: $color_1;
+			font-size: 17px
+			font-weight: 400
+		.reasons_text
+			color: #202020
+			font-size: 15px
+			font-weight: 300
+			line-height: 21px
+
+.mobile 
+  min-height: 864px
+  padding: 48px 0 79px 0
+  background: url(../img/mobile_bg.png) 
+  &_subtitle
+    font-weight: 400
+    font-size: 17px
+    line-height: 21px
+    // display: flex
+    // align-items: center
+    text-align: center
+    color: #222222
+    // margin-top: 19px
+  .capabilities_text_1
+    font-weight: 400;
+    font-size: 11px;
+    justify-content: center
+    text-align: center
+    text-transform: uppercase;
+    width: 112px;
+    height: 24px;
+    display: block
+    margin: 0 auto
+    background: #000000;  
+    color: #FFFFFF;
+    // margin-bottom: 4px
+  
+  .row 
+    margin-top: 32px
+  &_item 
+    width: 320px
+    height: 280px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
+    position: relative
+    &_1
+      background: url('../icons/Карточка_1.png') center (center/cover) no-repeat
+    &_2
+      background: url(../icons/Карточка_2.png) center (center/cover) no-repeat
+    &_3
+      background: url(../icons/Карточка_3.png) center (center/cover) no-repeat
+    &_4
+      background: url(../icons/Карточка_4.png) center (center/cover) no-repeat
+    &_5
+      background: url(../icons/Карточка_5.png) center (center/cover) no-repeat
+    &_6
+      background: url(../icons/Карточка_6.png) center (center/cover) no-repeat
+    &_subtitle 
+      font-weight: 400
+      font-size: 24px
+      line-height: 31px
+      text-align: center
+      text-transform: uppercase
+      color: #FFFFFF
+    &_plus 
+      display: flex
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 35px
+      width: 26px
+      height: 26px
+      background: #000000
+      margin: 0 auto
+      border-radius: 100%
+      // padding: 6px
+      left: 50%
+      margin-top: 80px
+      transform: translateX(-50%)
+      cursor: pointer
+      &:before
+        content: " "
+        display: block
+        width: 14px
+        height: 2px
+        background-color: $color_1
+      &::after
+        content: " "
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        display: block
+        height: 14px
+        width: 2px
+        background-color: $color_1
+      &:hover
+        &:before, &:after 
+          background-color: #fff
+          transition: 0.5s all
+.benefits_eight2
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 15px
+
+.choice 
+	position: relative
+	min-height: 895px
+	padding: 57px 0 138px 0
+	background: url('../img/mobile_bg.png') 
+	&_img 
+		position: relative
+		display: block
+		margin: 56px auto 0 auto
+		z-index: 2
+	&_descr 
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	.black 
+		position: absolute 
+		top: 0
+		left: 0
+		height: 499px
+		width: 100%
+		background-color: #070716
+		z-index: 1
+
+.mobile_item_2, .mobile_item_3, .mobile_item_4, .mobile_item_5
+  .mobile_item_plus
+    margin-top: 110px
+.require 
+  padding: 68px 0 84px 0
+  .capabilities_text
+    font-weight: 400
+    font-size: 11px
+    line-height: 11px
+    display: block
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    text-transform: uppercase
+    color: #ffffff
+    // padding-top: 57px
+    mix-blend-mode: normal
+    // margin-top: 18px
+    width: 115px
+    height: 27px
+    background: #070716;
+  &_block 
+    margin: 33px 0
+    &_nmb
+      margin-bottom: 0px
+  &_title
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    // display: flex;
+    // align-items: center;
+    color: $color_1;
+  &_list
+    
+    list-style-type: none
+    padding-left: 50px
+    margin-top: 20px
+    li
+      position: relative
+      font-weight: 300
+      font-size: 17px
+      color: #222222
+      margin-bottom: 9px
+      line-height: 24px
+      &::before
+        content: " "
+        display: block
+        position: absolute
+        left: -25px
+        // vertical-align: middle
+        width: 21px
+        height: 20px
+        top: 3px
+        transform: translate(-5px, -2px)
+        background: url(../icons/check_blue_1.svg) center (center/cover) no-repeat
+
+  &_descr
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 24px;
+    color: $color_1;
+.benefits_eight3
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+  margin-top: 15px
+.require_nmb
+  .require_title
+    color: $color_2
+  .require_list
+      li
+        &::before
+          content: " "
+          display: block
+          position: absolute
+          left: -25px
+          // vertical-align: middle
+          width: 21px
+          height: 20px
+          top: 3px
+          transform: translate(-5px, -2px)
+          background: url(../icons/check_red_1.svg) center (center/cover) no-repeat
+.world
+  position: relative
+  min-height: 717px;
+  // background: #080816;
+  background: url(../icons/world_bg.svg) center (center / cover) no-repeat
+  padding-top: 55px
+.capabilities_text
+    font-weight: 400
+    font-size: 11px
+    line-height: 11px
+    display: block
+    padding: 5px 12px
+    margin: 0 auto
+    display: flex
+    justify-content: center
+    text-transform: uppercase
+    color: #070716;
+    // padding-top: 57px
+    mix-blend-mode: normal
+    // margin-top: 18px
+    width: 79px
+    height: 27px
+    background: #ffffff
+.benefits_eight
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 26px
+  color: #FFFFFF;
+.subtitle
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 3px
+  color: #FFFFFF;
+.down_title
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 650px
+  color: $color_1;
+
+footer 
+	padding: 14px 23px 39px 23px
+	a 
+		&:hover 
+			text-decoration: none
+.footer
+	&_divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
+		margin: 0 auto
+	&_wrapper
+		display: flex 
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&_wrapper > div 
+		width: 33%
+		&:nth-child(3)
+			display: flex 
+			justify-content: flex-end
+	&_social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&_item 
+			display: flex 
+			justify-content: center
+			align-items: center
+			margin: 0 4px 
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			i 
+				color: #fff
+	&_links
+		width: 390px
+		margin: 0 auto
+		&_main 
+			display: flex 
+			justify-content: space-between
+			padding: 0 10px
+			a 
+				color: #070716
+				font-size: 15px
+				font-weight: 300
+				text-transform: uppercase
+		&_sub 
+			display: flex 
+			justify-content: space-between
+			margin-top: 10px
+			a 
+				color: #999999
+				font-size: 11px
+				font-weight: 300
+				text-transform: uppercase
+		&_lang 
+			display: block 
+			margin: 0 auto
+			color: #1fbad6
+			font-size: 11px
+			font-weight: 400
+			margin-top: 19px
+			text-transform: uppercase
+			text-align: center
+.footer_mobile
+	img
+		width: 110px
+
+.xs_visible
+  display: none
